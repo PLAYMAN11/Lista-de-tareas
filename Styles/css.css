@@ -1,0 +1,13 @@
+
+tr{
+    border: 2px solid black;
+    display: flexbox;
+    justify-content: space-between; 
+    margin: 0;
+}
+td{
+    border: 2px solid black;
+    display: flexbox;
+    justify-content: space-between;
+    margin: 0;
+}
