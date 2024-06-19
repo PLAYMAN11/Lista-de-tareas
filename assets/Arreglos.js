@@ -6,12 +6,16 @@ let tabla
 
 boton.addEventListener("click", function(e){
     let a = document.getElementById("Tarea");
-    Tarea.push(a.value)
+    let tarea = {valor: a.value,completada : false}
+    Tarea.push(tarea)
     MostrarDatos()
 });
 
 function CompletarTarea(i) {
-        Tarea[i] += " (Completado)";
+        if (!Tarea[i].completada) {
+            Tarea[i].valor += " (Completado)";
+            Tarea[i].completada =true 
+        }
         MostrarDatos();
     }
     
@@ -34,7 +38,7 @@ function MostrarDatos() {
 
             tabla += 
             "<tr><td> " +(i+1)+ "</td>"+
-            "<td>"+ Tarea[i] +" </td>"+ 
+            "<td>"+ Tarea[i].valor +" </td>"+ 
             "<td><button onclick=\"CompletarTarea("+i+")\">Completar</button></td>"+
             "<td><button onclick=\"EliminarTarea("+i+")\">Eliminar</button></td>" +
             "</tr>";

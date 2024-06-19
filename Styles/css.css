@@ -1,4 +1,19 @@
+body{
+    margin: 0;
 
+}
+header{
+    border-top: 4px solid #ff05d1;
+    font-size: 54px;
+    box-shadow: 0 0 4px 0 ;
+    background-color: white;
+}
+.Cabeza{
+    margin: 7px 0 9px 15px;
+}
+.Cuerpo{
+    margin: 32px 0px 0px 36px;
+}
 tr{
     border: 2px solid black;
     display: flexbox;
@@ -10,4 +25,9 @@ td{
     display: flexbox;
     justify-content: space-between;
     margin: 0;
+}
+
+ table{
+    display: flex;
+    justify-content: center;
 }
