@@ -4,19 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styles/css.css">
+    <link rel="stylesheet" href="Styles/css/bootstrap.css">
+    <link rel="stylesheet" href="Styles/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Styles/css/bootstrap.rtl.css">
+    <link rel="stylesheet" href="Styles/css/bootstrap.rtl.min.css">
     <title>Document</title>
 </head>
-<body>
+<body class="bg-dark.bg-gradient">
     <header>
         <div class="Cabeza">
         To-Do-List
         <div>
     </header>
     <div class="Cuerpo">
-        <label for="" >Ingrese una tarea</label>
-        <input type="text" id="Tarea"> 
+        <div class="input-container">
+            <input placeholder="Enter text" class="input-field" id="Tarea" type="text">
+            <label for="input-field" class="input-label">Ingrese Una tarea</label>
+            <span class="input-highlight"></span>
+          </div>
         <br>
-        <button id="Enviar">Agregar</button>
+        <button id="Enviar" class="btn">Agregar</button>
 
         <div id="ListaTareas">
 

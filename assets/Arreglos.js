@@ -32,15 +32,15 @@ function MostrarDatos() {
         for (let i = 0; i < Tarea.length; i++) {
     
             if (i==0) {
-                tabla = "<table><tbody><tr><td>Tarea</td><td>Descripcion</td>"+
+                tabla = "<table class=\"table\"><tbody><tr><td>Tarea</td><td>Descripcion</td>"+
                 "<td>Completar</td><td>Eliminar</td></tr>";
             }
 
             tabla += 
             "<tr><td> " +(i+1)+ "</td>"+
-            "<td>"+ Tarea[i].valor +" </td>"+ 
-            "<td><button onclick=\"CompletarTarea("+i+")\">Completar</button></td>"+
-            "<td><button onclick=\"EliminarTarea("+i+")\">Eliminar</button></td>" +
+            "<th scope=\"row\">"+ Tarea[i].valor +" </th>"+ 
+            "<td><button onclick=\"CompletarTarea("+i+")\" class=\"btn\">Completar</button></td>"+
+            "<td><button onclick=\"EliminarTarea("+i+")\" class=\"btn\">Eliminar</button></td>" +
             "</tr>";
             
         if (i==Tarea.length) {
