@@ -66,4 +66,9 @@ header{
   .input-field:focus + .input-label + .input-highlight {
     width: 100%;
   }
-  
+  .btn{
+    display: block;
+    width: 100%;
+    padding: 10px, 0, 10px ,0px;
+    font-size: 16px;
+  }
